@@ -37,6 +37,8 @@ const profileRoutes = require('./routes/profiles');
 const productRoutes = require('./routes/products');
 const orderRoutes = require('./routes/orders');
 const apiManagementRoutes = require('./routes/api-management');
+const fruitRoutes = require('./routes/fruits');
+const presidentRoutes = require('./routes/presidents');
 
 app.use('/api/v1/system', systemRoutes);
 app.use('/api/v1/users', userRoutes);
@@ -45,6 +47,8 @@ app.use('/api/v1/profiles', profileRoutes);
 app.use('/api/v1/products', productRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/api-management', apiManagementRoutes);
+app.use('/api/v1/fruit', fruitRoutes);
+app.use('/api/v1/presidents', presidentRoutes);
 
 // Root endpoint
 app.get('/', (req, res) => {
