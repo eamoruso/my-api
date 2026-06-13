@@ -1,2 +1,2 @@
 # Development
-This is was developed and used for testing my ZombieAPI application.
+This was developed and utilized for testing my ZombieAPI application. It adheres to best practices in API backend development. 
