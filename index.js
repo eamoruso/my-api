@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // Rate limiter
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 100,
+  max: 500,
   message: { error: 'Too many requests, please try again later' }
 });
 app.use('/api/', limiter);
@@ -37,8 +37,12 @@ const profileRoutes = require('./routes/profiles');
 const productRoutes = require('./routes/products');
 const orderRoutes = require('./routes/orders');
 const apiManagementRoutes = require('./routes/api-management');
-const fruitRoutes = require('./routes/fruits');
-const presidentRoutes = require('./routes/presidents');
+const movieRoutes = require('./routes/movies');
+const bookRoutes = require('./routes/books');
+const weatherRoutes = require('./routes/weather');
+const countryRoutes = require('./routes/countries');
+const recipeRoutes = require('./routes/recipes');
+const carRoutes = require('./routes/cars');
 
 app.use('/api/v1/system', systemRoutes);
 app.use('/api/v1/users', userRoutes);
@@ -47,8 +51,12 @@ app.use('/api/v1/profiles', profileRoutes);
 app.use('/api/v1/products', productRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/api-management', apiManagementRoutes);
-app.use('/api/v1/fruit', fruitRoutes);
-app.use('/api/v1/presidents', presidentRoutes);
+app.use('/api/v1/movies', movieRoutes);
+app.use('/api/v1/books', bookRoutes);
+app.use('/api/v1/weather', weatherRoutes);
+app.use('/api/v1/countries', countryRoutes);
+app.use('/api/v1/recipes', recipeRoutes);
+app.use('/api/v1/cars', carRoutes);
 
 // Root endpoint
 app.get('/', (req, res) => {

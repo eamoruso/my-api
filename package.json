@@ -19,5 +19,15 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eamoruso/my-api.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/eamoruso/my-api/issues"
+  },
+  "homepage": "https://github.com/eamoruso/my-api#readme"
 }
