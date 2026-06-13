@@ -1,15 +1,23 @@
 {
   "name": "my-api",
   "version": "1.0.0",
-  "description": "Simple API",
+  "description": "Zombie APIs Research - Comprehensive REST API with 100+ endpoints",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Testing not implemented yet\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-rate-limit": "^7.5.0",
+    "js-yaml": "^4.1.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
